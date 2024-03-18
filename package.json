@@ -1,0 +1,14 @@
+{
+  "name": "blue-print",
+  "version": "1.0.0",
+  "description": "Beautiful houses",
+  "scripts": {
+    "sass:watch": "sass --watch src/styles:dist/styles"
+  },
+  "keywords": [],
+  "author": "Arthur BROUDOUX <abroudoux>, Hugo LECAPLAIN",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.49.0"
+  }
+}

@@ -1,5 +1,8 @@
 .header {
   background-color: red;
 }
+.header h1 {
+  color: blue;
+}
 
 /*# sourceMappingURL=index.css.map */
