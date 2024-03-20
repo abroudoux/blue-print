@@ -4,6 +4,7 @@ const menuButton = document.getElementById('icon-menu-burger');
 const iconOpenMenu = document.getElementById('icon-open-menu');
 const iconCloseMenu = document.getElementById('icon-close-menu');
 const menu = document.getElementById('menu');
+const heroBanner = document.getElementById('hero-banner');
 
 let isMenuOpen = false;
 

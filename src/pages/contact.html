@@ -9,7 +9,27 @@
   </head>
   <body>
     <main>
-      <section id="contact"></section>
+      <section id="contact">
+        <div class="contact-half-div" id="contact-left-section"></div>
+        <div class="contact-half-div" id="contact-right-section">
+          <form>
+            <h2>Contact Us</h2>
+            <div class="input-form">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="input-form">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="input-form">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>

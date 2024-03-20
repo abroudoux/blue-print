@@ -2,12 +2,8 @@
 @import 'utilities/mixins';
 
 #hero-banner {
-  background-image: url('../../assets/picture-house-3.jpg');
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 15px solid $color-orange;
+  @include section;
+  @include background-image('picture-house-3.jpg');
 
   header {
     @include flex-row-between-center;
@@ -25,8 +21,6 @@
     }
 
     #icon-menu-burger {
-      height: 50px; 
-      width: 50px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;

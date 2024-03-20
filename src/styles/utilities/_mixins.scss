@@ -1,4 +1,23 @@
+@mixin section {
+    width: 100vw;
+    height: 100vh;
+    border: 15px solid $color-orange;
+}
+
+@mixin background-image($image-url) {
+    background-image: url('../../assets/#{$image-url}');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 @mixin flex-row-between-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-row-center-center {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
