@@ -10,23 +10,44 @@ section#hero-banner {
   border: 15px solid $color-orange;
 
   header {
-    @include flex-row-center-center;
+    @include flex-row-between-center;
 
     width: 100%;
     height: auto;
-    padding: 30px;
+    padding: 30px 45px;
 
     span {
       font-size: 5.5rem;
       color: $color-white;
       font-family: $font-romanesco;
+      mix-blend-mode: difference;
+      background-color: 0 0 0 0.5;
     }
 
     #icon-menu-burger {
       height: 50px; 
-      width: 50px; 
-      background-color: red;
+      width: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
       z-index: 100;
+      color: $color-white;
+      font-size: 2.5rem;
+      cursor: pointer;
+
+      #icon-open-menu {
+        @include transition-item;
+
+        display: block;
+      }
+
+      #icon-close-menu {
+        @include transition-item;
+
+        display: none;
+      }
     }
   }
 
@@ -35,10 +56,13 @@ section#hero-banner {
     background-color: $color-brown;
     position: absolute;
     top: 0;
-    right: -20vw;
+    right: -25vw;
     padding: 5vh 5vw;
     transition: all .75s ease-in-out;
     color: $color-white;
+    border-top: 15px solid $color-orange;
+    border-right: 15px solid $color-orange;
+    border-bottom: 15px solid $color-orange;
 
     nav ul {
       display: flex;

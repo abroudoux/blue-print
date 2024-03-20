@@ -9,32 +9,52 @@ section#hero-banner {
 section#hero-banner header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: auto;
-  padding: 30px;
+  padding: 30px 45px;
 }
 section#hero-banner header span {
   font-size: 5.5rem;
   color: #FFDCC2;
   font-family: "Romanesco", cursive;
+  mix-blend-mode: difference;
+  background-color: 0 0 0 0.5;
 }
 section#hero-banner header #icon-menu-burger {
   height: 50px;
   width: 50px;
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
   z-index: 100;
+  color: #FFDCC2;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+section#hero-banner header #icon-menu-burger #icon-open-menu {
+  transition: all 0.75s ease-in-out;
+  display: block;
+}
+section#hero-banner header #icon-menu-burger #icon-close-menu {
+  transition: all 0.75s ease-in-out;
+  display: none;
 }
 section#hero-banner #menu {
   height: 100vh;
   background-color: #3D1B00;
   position: absolute;
   top: 0;
-  right: -20vw;
+  right: -25vw;
   padding: 5vh 5vw;
   transition: all 0.75s ease-in-out;
   color: #FFDCC2;
+  border-top: 15px solid #FF832A;
+  border-right: 15px solid #FF832A;
+  border-bottom: 15px solid #FF832A;
 }
 section#hero-banner #menu nav ul {
   display: flex;

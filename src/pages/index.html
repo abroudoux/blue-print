@@ -10,13 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
     <script src="../scripts/index.js" defer></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   </head>
   <body>
     <main>
       <section id="hero-banner">
         <header>
           <span>Blue Print</span>
-          <div id="icon-menu-burger"></div>
+          <div id="icon-menu-burger">
+            <i data-lucide="align-right" id="icon-open-menu"></i>
+            <i data-lucide="x" id="icon-close-menu"></i>
+          </div>
         </header>
         <div id="menu">
           <nav>
@@ -33,5 +37,8 @@
       <section id="contact"></section>
       <footer></footer>
     </main>
+    <script>
+      lucide.createIcons();
+    </script>  
   </body>
 </html>
