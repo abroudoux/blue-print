@@ -1,7 +1,55 @@
-.header {
-  background-color: red;
+@import 'utilities/variables';
+@import 'utilities/mixins';
 
-  h1 {
-    color: blue;
+section#hero-banner {
+  background-image: url('../../assets/picture-house-3.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 15px solid $color-orange;
+
+  header {
+    @include flex-row-center-center;
+
+    width: 100%;
+    height: auto;
+    padding: 30px;
+
+    span {
+      font-size: 5.5rem;
+      color: $color-white;
+      font-family: $font-romanesco;
+    }
+
+    #icon-menu-burger {
+      height: 50px; 
+      width: 50px; 
+      background-color: red;
+      z-index: 100;
+    }
+  }
+
+  #menu {
+    height: 100vh;
+    background-color: $color-brown;
+    position: absolute;
+    top: 0;
+    right: -20vw;
+    padding: 5vh 5vw;
+    transition: all .75s ease-in-out;
+    color: $color-white;
+
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5vh;
+
+      li a {
+        font-size: 2.5rem;
+        cursor: pointer;
+        color: $color-white;
+      }
+    }
   }
 }
