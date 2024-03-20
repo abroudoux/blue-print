@@ -1,4 +1,4 @@
-section#hero-banner {
+#hero-banner {
   background-image: url("../../assets/picture-house-3.jpg");
   width: 100vw;
   height: 100vh;
@@ -6,7 +6,7 @@ section#hero-banner {
   background-repeat: no-repeat;
   border: 15px solid #FF832A;
 }
-section#hero-banner header {
+#hero-banner header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -15,14 +15,14 @@ section#hero-banner header {
   height: auto;
   padding: 30px 45px;
 }
-section#hero-banner header span {
+#hero-banner header span {
   font-size: 5.5rem;
   color: #FFDCC2;
   font-family: "Romanesco", cursive;
   mix-blend-mode: difference;
   background-color: 0 0 0 0.5;
 }
-section#hero-banner header #icon-menu-burger {
+#hero-banner header #icon-menu-burger {
   height: 50px;
   width: 50px;
   display: flex;
@@ -35,15 +35,15 @@ section#hero-banner header #icon-menu-burger {
   font-size: 2.5rem;
   cursor: pointer;
 }
-section#hero-banner header #icon-menu-burger #icon-open-menu {
+#hero-banner header #icon-menu-burger #icon-open-menu {
   transition: all 0.75s ease-in-out;
   display: block;
 }
-section#hero-banner header #icon-menu-burger #icon-close-menu {
+#hero-banner header #icon-menu-burger #icon-close-menu {
   transition: all 0.75s ease-in-out;
   display: none;
 }
-section#hero-banner #menu {
+#hero-banner #menu {
   height: 100vh;
   background-color: #3D1B00;
   position: absolute;
@@ -52,19 +52,38 @@ section#hero-banner #menu {
   padding: 5vh 5vw;
   transition: all 0.75s ease-in-out;
   color: #FFDCC2;
-  border-top: 15px solid #FF832A;
-  border-right: 15px solid #FF832A;
-  border-bottom: 15px solid #FF832A;
+  border: 15px solid #FF832A;
+  border-left: 0;
 }
-section#hero-banner #menu nav ul {
+#hero-banner #menu nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+#hero-banner #menu nav ul {
   display: flex;
   flex-direction: column;
   gap: 2.5vh;
 }
-section#hero-banner #menu nav ul li a {
+#hero-banner #menu nav ul li a {
   font-size: 2.5rem;
   cursor: pointer;
   color: #FFDCC2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+#hero-banner #menu nav ul li a svg.icon-link-menu {
+  transition: all 0.75s ease-in-out;
+  margin-left: 5px;
+  font-size: 5rem;
+  visibility: hidden;
+}
+#hero-banner #menu nav ul li a:hover svg.icon-link-menu {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=index.css.map */

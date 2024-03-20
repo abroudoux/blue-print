@@ -1,13 +1,13 @@
 console.log('Js is working!')
 
-const iconMenuBurger = document.getElementById('icon-menu-burger');
+const menuButton = document.getElementById('icon-menu-burger');
 const iconOpenMenu = document.getElementById('icon-open-menu');
 const iconCloseMenu = document.getElementById('icon-close-menu');
 const menu = document.getElementById('menu');
 
 let isMenuOpen = false;
 
-iconMenuBurger.addEventListener('click', () => {
+menuButton.addEventListener('click', () => {
   if (isMenuOpen) {
     menu.style.right = '-25vw';
     iconCloseMenu.style.display = 'none';
